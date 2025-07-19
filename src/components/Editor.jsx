@@ -15,7 +15,7 @@ export default function Editor() {
     if (editIndex !== null) {
         setNote(notes[parseInt(editIndex)]);
     }
-}, [location, notes]); // added dependencies to fix Netlify CI error
+}, [location.search, notes]); 
 
 
     const handleSave = () => {
